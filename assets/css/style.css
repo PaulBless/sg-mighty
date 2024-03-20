@@ -15,11 +15,11 @@
 13.button
 14.about
 15.gsap style
-16.serviue
+16.service
 17.product
 18.pricing
 19.clients
-20.approch area
+20.approach area
 21.progress-bar
 22.cta 
 23.social area
@@ -27,7 +27,7 @@
 25. testimonials
 26.brand
 27.faq
-28.appoinment
+28.appointment
 29.progress-bar
 30.BLog
 31.feature
@@ -52,10 +52,14 @@
 /* Default  */
 @import url("../../../css2");
 :root {
+  --col-sg-main: #102770;
+  --col-sg-second: #04d5b6;
   --color-primary: #141414;
   --color-secondary: #1F1F25;
   --color-body: #74787C;
   --color-heading-1: #fff;
+  --color-heading-2: #102770;
+  --color-heading-3: #3566c9;
   --color-white:#fff;
   --color-success: #3EB75E;
   --color-danger: #FF0003;
@@ -17558,9 +17562,26 @@ body.coming-soon {
   position: relative;
 }
 
+/* hero banner */
 .banner-7-bg {
-  background-image: url(../images/banner/27.jpg);
   height: 960px;
+  background-image: url(../images/banner/111.jpg);
+  background-size: cover;
+  object-fit: contain;
+  /* background:
+  linear-gradient(rgba(7, 2, 58) 0%, red 80%),
+  linear-gradient(to bottom, rgb(7, 2, 58) 0%, yellow 100%),   url("../images/banner/111.jpg");
+  background-blend-mode: screen, difference, lighten; */
+
+}
+.banner-7-bg::after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 960px;
+  inset-inline-start: 0;
+  top: 0;
+  background-color: rgba(7, 2, 58, 0.01);
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .banner-7-bg {
@@ -22567,7 +22588,8 @@ main {
   }
 }
 .trusted-clients-area-start .scrollingText-three .title {
-  color: #141414;
+  /* color: #141414; */
+  color: #102770;
 }
 @media only screen and (max-width: 1199px) {
   .trusted-clients-area-start .scrollingText-three .title {
@@ -22594,11 +22616,13 @@ main {
   }
 }
 .trusted-clients-area-start .scrollingText-three .title span {
-  color: #fff;
+  /* color: #fff; */
+  color: #102770;
 }
 
 .bg-dark-1 {
-  background: #0E0E0E;
+  background: #102770;
+  /* background: #0E0E0E; */
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -22861,8 +22885,10 @@ main {
 }
 .main-wrapper-case-studies .title span {
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #74787C;
-  color: #0E0E0E;
+  -webkit-text-stroke-color: #fff;
+  color: #102770;
+  /* -webkit-text-stroke-color: #74787C;
+  color: #0E0E0E; */
 }
 
 .container-full-150 {
@@ -23022,7 +23048,7 @@ main {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: #1B1B1B;
+  background: var(--col-sg-main);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23090,7 +23116,7 @@ main {
   font-weight: 600;
   font-size: 22px;
   line-height: 29px;
-  color: #141414;
+  color: var(--col-sg-main);
 }
 .footer-main-wrapper-one .footer-single-wized-start ul {
   padding: 0;
@@ -23113,7 +23139,7 @@ main {
   margin-bottom: 7px;
 }
 .footer-main-wrapper-one .footer-single-wized-start .mail-contact-area .single-con-info.mail a {
-  color: #141414;
+  color: #74787C;
   font-weight: 500;
   font-size: 18px;
   line-height: 23px;
@@ -24896,7 +24922,8 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
 }
 
 .bg-dark-1 {
-  background-color: #0E0E0E;
+  /* background-color: #0E0E0E; */
+  background-color: #102770;
 }
 
 .blog-title-area-h4 {
@@ -26589,7 +26616,7 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
 }
 
 .team-title-4 {
-  text-align: right;
+  text-align: center;
   padding-top: 140px;
   padding-bottom: 80px;
   margin-right: 0;
@@ -27449,6 +27476,7 @@ body::-webkit-scrollbar-thumb {
   bottom: -7px;
 }
 
+/* loading screen */
 .loading-screen {
   position: fixed;
   left: 0;

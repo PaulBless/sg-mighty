@@ -2035,7 +2035,7 @@
 
           var maskFillText = gsap.to($this, {
             duration: 1,
-            backgroundSize: "200% 100%",
+            backgroundSize: "400% 100%",
             ease: Linear.easeNone
           });
 
