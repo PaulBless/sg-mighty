@@ -9,7 +9,7 @@
  * @return void
  * */
 
-function initMap(dom_el_id, lat, lng, marker_icon) {
+async function initMap(dom_el_id, lat, lng, marker_icon) {
     // add the fallback, we could use default parameterr but IE does not support default parameters
     if (typeof dom_el_id === 'undefined') {
         dom_el_id = 'map';

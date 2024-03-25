@@ -16615,7 +16615,9 @@ h2 div {
 }
 
 .inner-page {
-  background: #0E0E0E;
+  background: #020b2b;
+  /* background: #051c3a; */
+  /* background: #0E0E0E; */
 }
 .inner-page .rts-header-area-two {
   position: relative;

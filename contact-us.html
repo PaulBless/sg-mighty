@@ -13,9 +13,9 @@
     <link rel="stylesheet" href="assets/css/plugins/animate.min.css">
     <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <!--  -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2iWt15JqbkToHEnAYVVPUKaYkApqoXh0&libraries&callback=initGMap" async defer></script> -->
+    <!-- ajax jquery -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2iWt15JqbkToHEnAYVVPUKaYkApqoXh0&libraries&callback=initGMap" async defer></script>
 
 </head>
 
@@ -46,7 +46,7 @@
                                     <li class="menu-item menu-item-home"><a class="menu-link" href="https://sandia-engineering.com" target="_blank">Sandia Engineering</a></li>
                                     <li class="menu-item menu-item-home"><a class="menu-link" href="https://sandia-agric.com" target="_blank">Sandia Agric</a></li>
                                     <li class="menu-item menu-item-home"><a class="menu-link" href="https://sansarinnovations.com" target="_blank">Sansar Innovations </a></li>
-                                    <li class="menu-item menu-item-home"><a class="menu-link" href="#" target="_blank">Sandia Commodities</a></li>
+                                    <li class="menu-item menu-item-home"><a class="menu-link" href="#!" target="_blank">Sandia Commodities</a></li>
                                 </ul>
                             </li>
 
@@ -98,7 +98,7 @@
                                                 </li>
                                                 
                                                 <li id="menu-item-767" class="menu-item menu-item-has-children">
-                                                    <a href="#">Business Units<span>
+                                                    <a href="javascript:void(0)">Business Units<span>
                                                         <svg height="24" viewBox="0 0 24 24" width="24"
                                                             xmlns="http://www.w3.org/2000/svg">
                                                             <path class="heroicon-ui"
@@ -143,8 +143,8 @@
                                                     </ul>
                                                 </li>
 
-                                                <li class="menu-item menu-item-has-children d-none">
-                                                    <a href="#!">Articles & News<span><svg height="24" viewBox="0 0 24 24" width="24"
+                                                <li class="menu-item menu-item-has-children">
+                                                    <a href="javascript:void(0)">Articles & News<span><svg height="24" viewBox="0 0 24 24" width="24"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path class="heroicon-ui"
                                         d="M18.59 13H3a1 1 0 0 1 0-2h15.59l-5.3-5.3a1 1 0 1 1 1.42-1.4l7 7a1 1 0 0 1 0 1.4l-7 7a1 1 0 0 1-1.42-1.4l5.3-5.3z">
@@ -157,7 +157,7 @@
                                                     </ul>
                                                 </li>
 
-                                                <li class="menu-item"><a href="contact.html">Contact</a></li>
+                                                <li class="menu-item"><a href="contact-us.html">Contact</a></li>
                                             </ul>
                                         </div>
                                         <!-- contact info -->
@@ -186,10 +186,11 @@
                                                     </div>
                                                     <div class="rts-social-area-one">
                                                         <ul>
-                                                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                                                            <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
-                                                            <li><a href="#"><i class="fa-brands fa-skype"></i></a></li>
+                                                            <li><a href="https://facebook.com/sandiagroup"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                                            <li><a href="https://twitter.com/sandiagroup"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                                            <li><a href="https://linkedin.com/sandiagroup"><i class="fa-brands fa-linkedin"></i></a></li>
+                                                            <li><a href="https://"><i class="fa-brands fa-whatsapp"></i></a></li>
+                                                            <li><a href="htt"><i class="fa-brands fa-skype"></i></a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -293,9 +294,9 @@
     <!-- ***************************
         Google Map Area Start
      *************************** -->
-     <!-- <div id="google_map">
+     <div id="google_map">
         <div id="map"></div>
-    </div> -->
+    </div>
     <!--end .google_map-->
     <!-- ***************************
         Google Map Area End
@@ -346,7 +347,7 @@
                             <h5 class="title">Useful Links</h5>
                             <ul class="footer-nav">
                                 <li><a href="about.html">About Us</a></li>
-                                <li><a href="contact.html">Contact Us</a></li>
+                                <li><a href="contact-us.html">Contact Us</a></li>
                                 <li><a href="blog.html">News Blog</a></li>
                                 <li><a href="#">Careers</a></li>
                                 <!-- <li><a href="portfolio-filter.html">Case Study</a></li> -->
@@ -490,8 +491,8 @@
 
     <script defer src="assets/js/vendor/waw.js"></script>
     <!-- google maps -->
-    <script defer src="assets/js/gmap.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2iWt15JqbkToHEnAYVVPUKaYkApqoXh0&libraries"></script>
+    <!-- <script defer src="assets/js/gmap.js"></script> -->
+    <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2iWt15JqbkToHEnAYVVPUKaYkApqoXh0&libraries"></script> -->
     <!-- custom javascript -->
     <script defer src="assets/js/main.js"></script>
     <!-- Scripts style two End -->
@@ -501,11 +502,12 @@
         // Function to initialize the map
         function initGMap() {
             // Replace with your business coordinates (latitude and longitude)
-            const myLatLng = { lat: 40.712776, lng: -74.005974 }; 
+            const myLatLng = { lat: 5.5540139, lng: -0.2027607 };
             const marker_icon = 'assets/images/sg/map-marker.png';
             const map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 15,
-                center: myLatLng
+                zoom: 17,
+                center: myLatLng,
+                
             });
 
             // Create a marker for your business location
@@ -513,9 +515,13 @@
                 position: myLatLng,
                 map: map,
                 icon: marker_icon,
-                title: "Sandia Group of Companies" // Optional: Add a title for the marker
+                title: "Sandia Group of Companies",  
+                animation: google.maps.Animation.DROP
             });
+            // Create an info window for the marker
+            
         }
+        
     </script>
 </body>
 
